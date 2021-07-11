@@ -1,71 +1,46 @@
-# Getting Started with Create React App
+# A quick start React +TailwindCSS + Styled-Components + Twin-Macro template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An opinionated quick start [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with configured **TailwindCSS**, **Styled-components**, **Twin.Macro**, **Craco** configuration.
+
+## Usage
+
+```bash
+npx create-react-app [your-project-name] --template react-tailwind-anish
+```
+
+Or
+
+```bash
+yarn create react-app your-project-name --template react-tailwind-anish
+```
+
+`npx` command installs the most recent stable version of CRA from npm.
+
+`--template` parameter points to this template, note that `cra-template-` prefix is omitted.
+
+## Motivation
+
+You know the pain. You start a new project from scratch and need to configure it again and again. It needs tailwind and craco configuration. I want to focus on building amazing projects and not spending hours configuring. That's why I've created this template. It's here for you to use.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+- `yarn start` - runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `yarn test` - launches the test runner in the interactive watch mode.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- `yarn build` - builds the app for production to the `build` folder.
 
-### `yarn test`
+- `yarn eject` - exposes content of `react-script` package
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Due to CRA template limitations (we can change only `scripts` and `dependencies` inside generated `package.json`) all configuration is done by adding config files where possible. Also no `devDependencies` for now, sorry.
 
-### `yarn build`
+## DevDependencies Configuration
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For devDependencies you can remove the `autoprefixer`, `postcss`, `tailwindcss` from dependencies and paste it into the ***"devDependencies"*** object.
+![Configuration for devDependencies](https://raw.githubusercontent.com/Anishpras/cra-template-react-tailwind/main/assets/carbon.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Thank you
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# cra-template-react-tailwind
+I hope this template will be helpful for you and you will love using it 🔥. 
